@@ -1,0 +1,87 @@
+@use 'variables' as *;
+
+@mixin bouton ($bgcolor, $color, $border, $padding){
+    background-color: $bgcolor;
+    color: $color;
+    border: $border;
+    padding: $padding;
+}
+
+%bouton{
+    padding: 5px, 10px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: 600;
+}
+.btn{
+
+    @include bouton($neutral-color,$primary-color,none, 10px 10px);
+    @extend %bouton;
+}
+
+.btn__courriel{
+    @include bouton($primary-color,$secondary-color,none, 20px 30px);
+    @extend %bouton;
+}
+
+
+
+.btn__courriel:hover{
+    @include bouton($neutral-color,$accent-color,none, 20px 30px);
+    @extend %bouton;
+}
+
+.btn__objectifs{
+    @include bouton(transparent,$primary-color,solid 3px $primary-color,5px 10px);
+    @extend %bouton;
+}
+
+.btn__objectifs:hover{
+    @include bouton(transparent,$primary-color,solid 3px $primary-color,5px 10px);
+    @extend %bouton;
+    animation-name: btn-hover;
+    animation-duration: 4s;
+}
+
+@keyframes btn-hover{
+    0% {background-color: $neutral-color;}
+    25% {background-color: #03A7EB;}
+    50% {background-color: #43DD76;}
+    75% {background-color: #F43745;}
+    100% {background-color: #25A9AF}
+}
+
+@mixin section ($bgcolor, $color, $padding, $fontsize){
+    background-color: $bgcolor;
+    color: $color;
+    padding: $padding;
+    $fontsize: $fontsize;
+}
+
+section{
+    @include section(none,none, 30px, none)
+}
+
+header{
+    @include section($secondary-color,$primary-color, 25px 0px, 1.5rem)
+}
+
+#contact{
+    @include section($primary-color, $secondary-color, 20px, 0.2rem)
+}
+
+#footer-nav{
+    @include section($accent-color, $primary-color, 20px, 0.2rem)
+}
+
+
+#banniere{
+    @include section($neutral-color, $primary-color, 50px, 0.2rem)
+}
+
+#principale{
+    @include section(none, $primary-color, 50px, 0.2rem);
+    background: $accent-color;
+}
+
+

@@ -1,0 +1,36 @@
+
+@use 'variables' as *;
+
+footer{
+        margin-top: auto;
+    nav{
+        font-size: 0.2rem;
+        li{
+            padding: 5px;
+        }
+    }
+    .footer-logo{
+    width: 150px;
+    padding: 0px 0px 20px 0px;
+    }
+    p{
+    display: flex;
+    align-items: center;
+    }
+
+    .medias-sociaux{
+        padding-bottom: 10px;
+    }
+    
+}
+
+
+
+.coordonnées{
+    display: flex;
+    align-items: center;
+    a{
+        padding-left: 15px;
+        color: $secondary-color;
+    }
+}

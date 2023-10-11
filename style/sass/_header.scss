@@ -1,0 +1,15 @@
+@use 'variables' as *;
+
+
+nav{
+    a{
+        padding: 5px;  
+    }
+   a:hover{
+    background: $accent-color;
+    padding: 5px;
+    }
+}
+.menu{
+    width: 40px;
+}

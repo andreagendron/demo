@@ -1,0 +1,63 @@
+@use 'variables' as *;
+
+* {
+	box-sizing: border-box;
+}
+
+%container{
+  width: 90%;
+	margin: 0 auto;
+}
+
+.container{
+  &--400{
+    @extend %container;
+    max-width: 400px;
+  }
+  &--1200{
+    @extend %container;
+    max-width: 1200px;
+  }
+  &--1800{
+    @extend %container;
+    max-width: 1800px;
+  }
+  }
+
+  nav a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: $primary-color;
+  }
+  
+  nav li{
+    display: inline-block;
+    margin: 0 10px;}
+  
+  .show-on-mobile {
+	display: none !important;
+  }
+
+  body{
+	font-family: $font-stack;
+	color: $primary-color;
+  }
+
+  h1, h2{
+    text-transform: uppercase;
+    font-weight:600;
+  }
+
+  p{
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+ 
+body{
+  display: flex;
+  flex-direction: column;
+   min-height: 100vh;
+}
+
+
+

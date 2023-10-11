@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Gabarit d'exercice</title>
+	<meta name="description" content="Exercice dans le cadre du cours Intégration des inferfaces web 2">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style/css/normalize.css" />
+	<link rel="stylesheet" href="style/css/style.css" />
+	<link rel="icon" href="favicon.ico"/>
+</head> 
+
+<body>
+	<header>
+		<div class="container--1800 flex-cotes">
+			<a href="index.html"><img class="header__logo" src="img/logo.svg" alt="Logo Le club de course"></a>
+			<nav>
+				<ul class="hide-on-mobile">
+					<li><a href="#">Boutique</a></li>
+					<li><a href="#">Blogue</a></li>
+					<li><a href="#">À propos</a></li>
+					<li><a href="#">Nous joindre</a></li>
+				</ul>
+				<div class="show-on-mobile">
+					<a href="#"><img class="menu" src="icons/menu-mobile.png" alt="menu"></a>
+				</div>	
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section id="banniere">
+			<div class="container--1200">
+				<div class="banniere flex-cotes__nowrap">
+					<a href="#"><img class="hide-on-mobile banniere__arrow" src="icons/left-arrow.png" alt="Flèche gauche"></a>
+					<a href="#"><img class="banniere__img" src="img/banniere.jpg" alt="Photo homme qui court."></a>
+					<a href="#"><img class="hide-on-mobile banniere__arrow" src="icons/right-arrow.png" alt="Flèche droite"></a>
+				</div>
+				<div class="flex-center">
+					<a href="#"><img class="banniere__circle" src="icons/dark-circle.png" alt="Cercle plein"></a>
+					<a href="#"><img class="banniere__circle" src="icons/light-circle.png" alt="Cercle vide"></a>
+					<a href="#"><img class="banniere__circle" src="icons/light-circle.png" alt="Cercle vide"></a>
+				</div>
+			</div>	
+		</section>
+		<section id="principale">
+			<div class="container--400 infolettre">
+				<div class="infolettre__contenu">
+					<H1> Inscrivez vous à notre infolettre </H1>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus nesciunt aliquid sed.</p>
+				</div>
+				<form method="get" id="form-courriel" action="confirmation.html" class="flex-cotes">
+					<div class="label">
+						<label for="courriel">Votre courriel</label>
+					</div>
+					<div class="form">
+						<input type="email" name="mailCompte" id="courriel" placeholder="xyz@mail.com" />
+					</div>
+					<div class="form">
+						<input id="soumettre" class="btn__courriel" type="submit" value="Soumettre" />
+					</div>	
+				</form>
+			</div>
+			<div class="container--1200 flex-cotes">
+				<img class="col-demi" src="img/objectifs.png" alt="Photo de trois coureurs.">
+				<div class="col-demi">
+					<h2> Réalisez vos objectifs</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dolorum pariatur deserunt saepe provident atque ipsam ratione ipsum odit vel.</p>
+					<div class="flex-cotes stat">
+						<div class="col-demi-stat">
+							<p><strong>168</strong> membres actifs</p>
+						</div>
+						<div class="col-demi-stat">
+							<p><strong>200km</strong> de course par semaine</p>
+						</div>
+					</div>
+					<a class="btn__objectifs" href="#">En savoir plus</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<section id="footer-nav">
+			<a href="index.html" class="container--1800 flex-center"><img class="logo" src="img/logo.svg" alt="Logo Le club de course"></a>
+			<div class="footer-nav flex-center">
+				<nav>
+					<ul class="flex-center">
+						<li><a href="#">Boutique</a></li>
+						<li><a href="#">Blogue</a></li>
+						<li><a href="#">À propos</a></li>
+						<li><a href="#">Nous joindre</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Confidentialité</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		<section id="contact">
+			<div class="container--1800 flex-cotes">
+				<p class="flex-center">Fait par: Andréa Gendron</p>
+				<div class="medias-sociaux flex-center">
+					<a href="#"><img class="logo-fb" src="icons/facebook.png" alt="Logo Facebook"></a>
+					<a href="#"><img class="logo-link" src="icons/linkedin.png" alt="Logo Linkedin"></a>
+					<a href="#"><img class="logo-twitter" src="icons/twitter.png" alt="Logo Twitter"></a>
+					<a href="#"><img class="logo-insta" src="icons/instagram.png" alt="Logo Instagram"></a>
+				</div>
+				<div class="coordonnées">
+					<a href="#"><img class="icone-telephone" src="icons/telephone.png" alt="Icone téléphone"></a>
+					<a class="tel" href="tel:+14181234567">418 123-4567</a>
+					<a href="#"><img class="icone-courriel" src="icons/mail.png" alt="Icone courriel"></a>
+					<a href="cegep@troisrivieres.ca">cegep@troisrivieres.ca</a>
+				</div>
+			</div>
+		</section>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+@use 'variables' as *;
+main{
+    .banniere__circle{
+        max-width: 15px;
+    }
+
+    .infolettre{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    
+    .label{
+        display: none;
+    }
+    
+    .form{
+    padding-top: 15px;
+    }
+      
+    #soumettre{
+        text-decoration: none;
+        border: none;
+        text-align: center;
+        color: $secondary-color;
+        line-height: 1rem;
+    }
+
+    
+    
+    #courriel{
+        border: solid 3px $primary-color;
+        line-height: 1rem;
+        padding: 5px 10px;
+        border-radius: 7px;
+        width: 225px;
+    }
+    
+    #principale{
+        background: $accent-color;
+    }
+    
+    .stat{
+        padding-bottom: 30px;
+    }
+}
